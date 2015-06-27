@@ -1,0 +1,21 @@
+﻿<ion-view view-title="Sign Up" name="signup-view">
+    <ion-content class="padding">
+        <div class="list list-inset">
+            <label class="item item-input">
+                <input type="text" placeholder="Email" ng-model="data.email">
+            </label>
+            <label class="item item-input">
+                <input type="password" placeholder="Password" ng-model="data.password">
+            </label>
+            <label class="item item-input">
+                <input type="password" placeholder="Confirm Password" ng-model="data.confirm_password">
+            </label>
+        </div>
+        <button class="button button-block button-calm" ng-click="signUp(data.email,data.password)">Sign Up</button>
+        <p style="text-align:center">Already have an account?</p>
+        <button class="button button-block button-calm" ui-sref="login">
+            <!-- goes to signup page when clicked -->
+            Log In
+        </button>
+    </ion-content>
+</ion-view>
