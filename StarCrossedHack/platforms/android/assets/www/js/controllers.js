@@ -23,17 +23,19 @@ angular.module('starter.controllers', [])
     $scope.login = function (email, password) {
         console.log("LogIn Clicked");
         console.log("Email: " + email + "\nPassword: " + password);
-        var url = "https://api.idolondemand.com/1/api/sync/adduser/v1?";
+        var url = "https://api.idolondemand.com/1/api/sync/authenticate/v1?";
         var apikey = "4a0d6484-82ce-4f42-a5fc-d1f03c516edf";
         var post = $.post(url,
             {
+                "mechanism": "simple",
                 "store": "users",
                 "apikey": apikey,
-                "email": email,
+                "user": email,
                 "password": password
             });
         post.done(function (data) {
             console.log(data);
+            window.plugins.toast.showLongBottom('Log In Successful!');
         });
     }
 })
