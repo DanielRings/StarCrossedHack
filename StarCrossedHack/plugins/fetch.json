@@ -5,5 +5,12 @@
             "url": "https://github.com/EddyVerbruggen/Toast-PhoneGap-Plugin",
             "subdir": "."
         }
+    },
+    "org.dartlang.phonegap.gyroscope": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/zanderso/cordova-plugin-gyroscope",
+            "subdir": "."
+        }
     }
 }

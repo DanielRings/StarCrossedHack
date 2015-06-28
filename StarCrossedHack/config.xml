@@ -91,4 +91,9 @@
     <splash src="res/screens/wp8/SplashScreenImage.jpg" width="480" height="800" />
   </platform>
   <vs:plugin name="nl.x-services.plugins.toast" version="2.1.1" />
+  <preference name="KeepRunning" value="False" />
+  <preference name="ShowTitle" value="True" />
+  <preference name="InAppBrowserStorageEnabled" value="False" />
+  <preference name="SuppressesIncrementalRendering" value="True" />
+  <vs:plugin name="org.dartlang.phonegap.gyroscope" version="0.0.2" />
 </widget>
