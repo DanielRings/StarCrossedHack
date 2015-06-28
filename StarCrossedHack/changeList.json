@@ -138,18 +138,19 @@
     "www\\templates\\tabs.html",
     "res\\icons\\windows\\Square44x44Logo.scale-240.png",
     "res\\screens\\android\\screen-mdpi-portrait.png",
-    "plugins\\nl.x-services.plugins.toast\\src\\blackberry10\\native\\simulator\\public\\json_writer.o"
+    "plugins\\nl.x-services.plugins.toast\\src\\blackberry10\\native\\simulator\\public\\json_writer.o",
+    "www\\templates\\worldplaceholder.html",
+    "www\\templates\\text-modal.html"
   ],
   "deletedFilesIos": [
-    "www\\js\\iycgdzgf.enr~"
+    "www\\templates\\page.html"
   ],
   "addedPluginsIos": [
     "nl.x-services.plugins.toast@2.1.1"
   ],
   "deletedPluginsIos": [],
   "changedFiles": [
-    "plugins\\android.json",
-    "www\\index.html"
+    "plugins\\android.json"
   ],
   "deletedFiles": [],
   "addedPlugins": [],

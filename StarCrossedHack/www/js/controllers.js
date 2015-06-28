@@ -15,11 +15,12 @@ angular.module('starter.controllers', [])
             });
         post.done(function (data) {
             console.log(data);
+            window.plugins.toast.showLongBottom('Sign Up Successful!');
         });
     }
 })
 
-.controller('LogInCtrl', function ($scope) {
+.controller('LogInCtrl', function ($scope, $state) {
     $scope.login = function (email, password) {
         console.log("LogIn Clicked");
         console.log("Email: " + email + "\nPassword: " + password);
@@ -35,10 +36,38 @@ angular.module('starter.controllers', [])
             });
         post.done(function (data) {
             console.log(data);
-            window.plugins.toast.showLongBottom('Log In Successful!');
+            //window.plugins.toast.showLongBottom('Log In Successful!');
+            $state.go('world');
         });
     }
 })
+
+.controller('WorldCtrl', function ($scope, $ionicModal) {
+    $ionicModal.fromTemplateUrl('templates/text-modal.html', {
+        scope: $scope,
+        animation: 'slide-in-up'
+    }).then(function (modal) {
+        $scope.modal = modal;
+    });
+    $scope.openModal = function () {
+        $scope.modal.show();
+    };
+    $scope.closeModal = function () {
+        $scope.modal.hide();
+    };
+    //Cleanup the modal when we're done with it!
+    $scope.$on('$destroy', function () {
+        $scope.modal.remove();
+    });
+    // Execute action on hide modal
+    $scope.$on('modal.hidden', function () {
+        // Execute action
+    });
+    // Execute action on remove modal
+    $scope.$on('modal.removed', function () {
+        // Execute action
+    });
+});
 
 
 /*

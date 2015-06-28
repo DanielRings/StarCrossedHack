@@ -29,7 +29,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   // Each state's controller can be found in controllers.js
   $stateProvider 
 
-   //login
+    //login
   .state('login', {
     url: "/login",
     templateUrl: "templates/login.html",
@@ -40,6 +40,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/signup',
       templateUrl: 'templates/signup.html',
       controller: 'SignUpCtrl'
+  })
+    // world
+  .state('world', {
+      url: '/worldplaceholder',
+      templateUrl: 'templates/worldplaceholder.html',
+      controller: 'WorldCtrl'
   })
 
  /* 
